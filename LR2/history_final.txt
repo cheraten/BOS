@@ -1,0 +1,58 @@
+   28  mkdir test
+   29  cd test
+   30  touch file
+   31  ll file
+   32  chmod ugo-rwx file
+   33  echo "тест" > file
+   34  cat file
+   35  chmod u+w file
+   36  ll file
+   37  echo "test" > file
+   38  cat file
+   39  chmod g+r file
+   40  ll file
+   41  cat file
+   42  chmod u+r file
+   43  ll file
+   44  cat file
+   45  mkdir dir
+   46  touch dir/new_file
+   47  echo "file 2" > dir/new_file
+   48  ls dir
+   49  chmod ugo-x dir
+   50  cat dir/new_file
+   51  rm dir/new_file
+   52  chown root file
+   53  chown :root file
+   54  umask 0077
+   55  touch file1
+   56  ll file1
+   57  umask 0000
+   58  touch file2
+   59  ll file2
+   60  su
+   61  cd test
+   62  cat file
+   63  ll file
+   64  ll file1
+   65  su
+   66  cat file
+   67  su
+   68  cat file
+   69  su
+   70  cat file
+   71  cd ..
+   72  mkdir lr2
+   73  cd lr2
+   74  history >> ~/lr2/history.txt
+   75  cat  ~/lr2/history.txt
+   76  cd ..
+   77  cd test
+   78  ls -lR >> ~/lr2
+   79  ls -lR >> ~/lr2/ls-lR.txt
+   80  cat ~/lr2/ls-lR.txt
+   81  history
+   82  history >> ~/lr2/history.txt
+   83  cat  ~/lr2/history.txt
+   84  history
+   85  history >> ~/lr2/history_final.txt

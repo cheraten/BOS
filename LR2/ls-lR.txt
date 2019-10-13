@@ -1,0 +1,10 @@
+.:
+итого 4
+drw-rw-r--. 2 cheraten cheraten 22 окт 10 08:49 dir
+----r-----. 1 root     cheraten  5 окт 10 08:45 file
+-rw-------. 1 cheraten cheraten  0 окт 10 08:52 file1
+-rw-rw-rw-. 1 cheraten cheraten  0 окт 10 08:52 file2
+
+./dir:
+итого 0
+-????????? ? ? ? ?            ? new_file
