@@ -1,0 +1,3 @@
+ 1061  chmod +x euid_ruid.sh
+ 1062  ps -e -o ruid,euid,cmd | xargs -l ./euid_ruid.sh
+ 1063  history > history_euid_ruid.txt
